@@ -9,4 +9,6 @@ Versao preservada antes das proximas alteracoes drasticas:
 - Secao Metodo Darko
 - Assets locais de portfolio em `assets/portfolio/`
 
-Arquivo principal: `generated-page (14) (5).html`
+Arquivo principal para deploy: `index.html`
+
+Arquivo legado preservado: `generated-page (14) (5).html`
