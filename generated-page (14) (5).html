@@ -1,0 +1,1149 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darko | Agência de Marketing Premium</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+
+      #shader-hero canvas {
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+      }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body class="font-sans font-light text-zinc-900 bg-white selection:bg-zinc-900 selection:text-white antialiased overflow-x-hidden">
+    <div id="intro-overlay" class="fixed inset-0 z-[100] bg-black flex items-center justify-center overflow-hidden">
+      <div id="intro-logo" class="font-serif font-normal tracking-tight text-white text-3xl md:text-5xl opacity-0 translate-y-8">
+        Darko
+        <span class="font-sans font-light text-zinc-500 mx-2">|</span>
+        <span class="font-sans font-normal text-zinc-400 tracking-tight uppercase text-2xl md:text-4xl">
+          Agência
+        </span>
+      </div>
+    </div>
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out backdrop-blur-md border-b border-zinc-100 bg-white/90">
+      <div class="w-full max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="font-serif font-normal tracking-tight text-zinc-900 text-2xl cursor-default">
+          Darko
+          <span class="font-sans font-light text-zinc-300 mx-2">|</span>
+          <span class="font-sans font-normal text-zinc-500 tracking-tight uppercase text-xl">
+            Agência
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <span class="text-xs uppercase tracking-widest text-zinc-500 font-light hover:text-zinc-900 transition-colors cursor-default">
+            Estratégia Digital AAA
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header id="hero" class="relative w-full h-screen min-h-screen text-white overflow-hidden bg-black">
+      <div class="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-black">
+        <div id="hero-media-wrapper" class="w-full h-full absolute inset-0">
+          <div id="shader-hero" class="absolute inset-0 bg-black"></div>
+          <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+          <div class="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none"></div>
+        </div>
+      </div>
+
+      <div class="relative z-10 w-full h-full flex flex-col items-center justify-center px-6 text-center mt-12">
+        <div class="slide-content opacity-0 translate-y-8 w-full max-w-5xl mx-auto">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-tight leading-tight text-white/95">
+            <span class="text-7xl md:text-8xl lg:text-[120px] block">
+              Darko.
+            </span>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Web & Performance -->
+    <section class="py-24 md:py-36 overflow-hidden bg-zinc-50 border-b border-zinc-200 relative">
+      <div class="gsap-section opacity-0 translate-y-10 max-w-7xl mx-auto px-6 md:px-12 relative z-10 text-center mb-20 md:mb-28">
+        <span class="block text-xs uppercase tracking-widest text-zinc-500 font-normal mb-6">
+          Web &amp; Performance
+        </span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-zinc-900 leading-tight mb-8">
+          Sua Vitrine de
+          <br>
+          <span class="italic font-light text-zinc-400">Alto Ticket.</span>
+        </h2>
+        <p class="text-zinc-500 font-light text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed border-l-2 border-zinc-300 pl-6 italic mb-12">
+          "Um site institucional comum é um custo. Um ecossistema de vendas é um
+          investimento."
+        </p>
+      </div>
+
+      <div class="gsap-section opacity-0 translate-y-10 max-w-6xl mx-auto px-6 md:px-12 relative z-10 grid md:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="md:col-span-5 space-y-10">
+          <div class="flex items-start gap-6 group">
+            <div class="shrink-0 text-zinc-800 p-4 bg-white border border-zinc-100 rounded-2xl shadow-sm group-hover:scale-105 transition-transform">
+              <iconify-icon icon="solar:laptop-minimalistic-linear" class="text-3xl"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="text-xl font-normal text-zinc-900 mb-2 tracking-tight">
+                Showroom Digital
+              </h4>
+              <p class="text-zinc-500 font-light text-lg leading-relaxed">
+                Design exclusivo (Zero Canva). Uma interface que exala precisão
+                e sofisticação, elevando a percepção de valor do seu produto.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6 group">
+            <div class="shrink-0 text-zinc-800 p-4 bg-white border border-zinc-100 rounded-2xl shadow-sm group-hover:scale-105 transition-transform">
+              <iconify-icon icon="solar:shield-check-linear" class="text-3xl"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="text-xl font-normal text-zinc-900 mb-2 tracking-tight">
+                Landing Pages de Lançamento
+              </h4>
+              <p class="text-zinc-500 font-light text-lg leading-relaxed">
+                Páginas blindadas para conversão, onde o investidor encontra
+                absolutamente tudo o que precisa para tomar a decisão.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6 group">
+            <div class="shrink-0 text-zinc-800 p-4 bg-white border border-zinc-100 rounded-2xl shadow-sm group-hover:scale-105 transition-transform">
+              <iconify-icon icon="solar:bolt-linear" class="text-3xl"></iconify-icon>
+            </div>
+            <div>
+              <h4 class="text-xl font-normal text-zinc-900 mb-2 tracking-tight">
+                Velocidade e Luxo
+              </h4>
+              <p class="text-zinc-500 font-light text-lg leading-relaxed">
+                Carregamento instantâneo. No mercado premium, o tempo é o ativo
+                mais caro e escasso do seu cliente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 flex justify-center">
+          <div class="relative w-full max-w-[600px] transform md:-rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div class="bg-zinc-800 p-2 md:p-3 rounded-t-[1.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] relative z-10 border border-zinc-900">
+              <div class="w-1.5 h-1.5 bg-zinc-900 rounded-full mx-auto mb-2 opacity-50"></div>
+              <div class="bg-white aspect-[16/10] rounded-sm overflow-hidden flex flex-col relative border border-zinc-900">
+                <div class="h-8 md:h-12 border-b border-zinc-100 flex items-center justify-between px-4 md:px-6 bg-white/90 backdrop-blur shrink-0 absolute top-0 w-full z-20">
+                  <div class="text-xs font-serif font-normal tracking-widest text-zinc-900 uppercase">
+                    Cliente AAA
+                  </div>
+                  <div class="flex gap-4 md:gap-6 text-xs uppercase tracking-widest text-zinc-500">
+                    <span class="hover:text-zinc-900 transition-colors cursor-pointer">
+                      Empreendimentos
+                    </span>
+                    <span class="hover:text-zinc-900 transition-colors cursor-pointer hidden md:inline">
+                      Sobre
+                    </span>
+                    <span class="hover:text-zinc-900 transition-colors cursor-pointer">
+                      Contato
+                    </span>
+                  </div>
+                </div>
+                <div class="h-[55%] bg-zinc-100 relative overflow-hidden flex-shrink-0">
+                  <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Fake site hero" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-black/30 flex flex-col items-center justify-center p-4 text-center">
+                    <div class="text-white text-xs uppercase tracking-[0.2em] mb-2 font-normal">
+                      Exclusividade
+                    </div>
+                    <div class="text-white text-xl md:text-3xl font-serif font-light tracking-tight">
+                      O seu novo horizonte.
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:p-6 flex-1 bg-white flex gap-4 md:gap-6">
+                  <div class="flex-1 flex flex-col gap-2">
+                    <div class="w-full h-24 bg-zinc-100 rounded-sm overflow-hidden">
+                      <img src="https://i.pinimg.com/736x/4d/82/ac/4d82ac2618a6added7fea05b8870d899.jpg?w=800&amp;q=80" class="w-full h-full object-cover">
+                    </div>
+                    <div class="h-2 w-1/2 bg-zinc-200 rounded-full mt-1"></div>
+                    <div class="h-1.5 w-1/3 bg-zinc-100 rounded-full"></div>
+                  </div>
+                  <div class="flex-1 flex flex-col gap-2 hidden sm:flex">
+                    <div class="w-full h-24 bg-zinc-100 rounded-sm overflow-hidden">
+                      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;q=80&amp;w=400" class="w-full h-full object-cover">
+                    </div>
+                    <div class="h-2 w-1/2 bg-zinc-200 rounded-full mt-1"></div>
+                    <div class="h-1.5 w-1/3 bg-zinc-100 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-zinc-300 h-3 md:h-4 rounded-b-2xl w-[105%] -ml-[2.5%] relative z-0 border-t border-zinc-400 shadow-xl">
+              <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-zinc-400 rounded-b-md"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Humanização Estratégica -->
+    <section class="py-24 md:py-36 bg-white border-b border-zinc-200 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+          <div class="relative w-full aspect-[4/5] md:aspect-auto md:h-[700px] gsap-section opacity-0 translate-y-10">
+            <div class="absolute top-0 left-0 w-[75%] h-[80%] rounded-[2rem] overflow-hidden shadow-2xl z-10 group">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/785894e2-e197-48c1-83ab-98d72710b2be_1600w.jpg" alt="Direção de Imagem" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+            </div>
+            <div class="absolute bottom-0 right-0 w-[60%] h-[55%] rounded-[2rem] overflow-hidden shadow-2xl z-20 border-8 border-white group">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/344923d4-d28c-4fce-a3fa-fb62762831c9_800w.jpg" alt="Profissionalismo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <div class="absolute top-[10%] -right-6 z-30 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 flex items-center gap-4 hidden lg:flex">
+              <div class="w-12 h-12 bg-zinc-50 rounded-full flex items-center justify-center text-zinc-900">
+                <iconify-icon icon="solar:users-group-rounded-linear" class="text-2xl"></iconify-icon>
+              </div>
+              <div>
+                <p class="text-base font-normal text-zinc-900">
+                  Autoridade Visual
+                </p>
+                <p class="text-xs text-zinc-500">Conexão Imediata</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gsap-section opacity-0 translate-y-10">
+            <span class="block text-xs uppercase tracking-widest text-zinc-500 font-normal mb-6">
+              Humanização Estratégica
+            </span>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-zinc-900 leading-tight mb-8">
+              O Rosto da
+              <br>
+              <span class="italic font-light text-zinc-400">Confiança.</span>
+            </h2>
+            <p class="text-zinc-600 font-light text-xl leading-relaxed border-l-2 border-zinc-300 pl-6 italic mb-12">
+              "Marcas genéricas não criam conexão. Pessoas e histórias sim. A
+              autoridade visual da sua marca é o que chancelará o valor do seu
+              serviço."
+            </p>
+
+            <div class="space-y-8">
+              <div class="flex items-start gap-5 group">
+                <div class="shrink-0 w-12 h-12 rounded-xl bg-zinc-50 border border-zinc-200 flex items-center justify-center text-zinc-800 shadow-sm group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+                  <iconify-icon icon="solar:user-linear" class="text-2xl"></iconify-icon>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-serif font-normal text-zinc-900 mb-2 tracking-tight">
+                    Direção de Imagem
+                  </h3>
+                  <p class="text-zinc-500 font-light text-lg leading-relaxed">
+                    Com uma direção de arte impecável, sua marca ganha voz,
+                    elegância e autoridade imediata no mercado premium.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-5 group">
+                <div class="shrink-0 w-12 h-12 rounded-xl bg-zinc-50 border border-zinc-200 flex items-center justify-center text-zinc-800 shadow-sm group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+                  <iconify-icon icon="solar:shield-check-linear" class="text-2xl"></iconify-icon>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-serif font-normal text-zinc-900 mb-2 tracking-tight">
+                    Confiança Plena
+                  </h3>
+                  <p class="text-zinc-500 font-light text-lg leading-relaxed">
+                    Bastidores e processos que comunicam excelência,
+                    previsibilidade e segurança absoluta para o seu cliente
+                    final.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-5 group">
+                <div class="shrink-0 w-12 h-12 rounded-xl bg-zinc-50 border border-zinc-200 flex items-center justify-center text-zinc-800 shadow-sm group-hover:bg-zinc-900 group-hover:text-white transition-colors duration-300">
+                  <iconify-icon icon="solar:medal-ribbon-linear" class="text-2xl"></iconify-icon>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-serif font-normal text-zinc-900 mb-2 tracking-tight">
+                    Excelência Técnica
+                  </h3>
+                  <p class="text-zinc-500 font-light text-lg leading-relaxed">
+                    Sua equipe projetada como especialistas de elite. Mostramos
+                    a sua entrega e seu bastidor com precisão cinematográfica.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Conteúdo & Redes Sociais -->
+    <section id="portfolio" class="py-24 md:py-36 bg-zinc-50 border-b border-zinc-200 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="gsap-section opacity-0 translate-y-10 text-center mb-20 md:mb-28">
+          <span class="block text-xs uppercase tracking-widest text-zinc-500 font-normal mb-6">
+            Portfólio &amp; Cases
+          </span>
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-zinc-900 leading-tight mb-8">
+            A Arte da
+            <br>
+            <span class="italic font-light text-zinc-400">
+              Conversão Premium.
+            </span>
+          </h2>
+          <p class="text-zinc-500 font-light text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed border-l-2 border-zinc-300 pl-6 italic mb-12">
+            "Nossos projetos falam por si. Um acervo de marcas que transformaram
+            sua presença em autoridade e desejo."
+          </p>
+        </div>
+
+        <!-- Portfolio de Websites -->
+        <div id="portfolio-cards" class="gsap-section opacity-0 translate-y-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 lg:auto-rows-[300px] gap-5 lg:gap-6 group/list">
+          <a href="https://velvety-chimera-00ef4c.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Vértice Estates" class="group relative overflow-hidden rounded-[2rem] md:col-span-2 lg:col-span-5 lg:row-span-2 min-h-[460px] bg-zinc-900 border border-zinc-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 md:group-hover/list:opacity-50 hover:!opacity-100">
+            <img src="assets/portfolio/velvety-chimera.png" alt="Preview do website Vértice Estates" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute top-5 left-5 right-5 h-10 rounded-full bg-white/90 backdrop-blur flex items-center justify-between px-4 shadow-sm">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+              </div>
+              <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-normal">
+                verticeestates.com
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/75 via-zinc-950/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 md:p-8 flex items-end justify-between gap-6 text-white">
+              <div>
+                <span class="block text-[11px] uppercase tracking-widest text-white/70 font-normal mb-3">
+                  Imobiliário premium
+                </span>
+                <h3 class="font-serif font-normal tracking-tight text-4xl md:text-5xl">
+                  Vértice Estates
+                </h3>
+              </div>
+              <div class="w-12 h-12 rounded-full bg-white text-zinc-900 flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:rotate-45">
+                <iconify-icon icon="solar:arrow-right-up-linear" class="text-2xl"></iconify-icon>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://warm-pithivier-37b881.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Aura" class="group relative overflow-hidden rounded-[2rem] lg:col-span-4 min-h-[300px] bg-zinc-900 border border-zinc-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 md:group-hover/list:opacity-50 hover:!opacity-100">
+            <img src="assets/portfolio/warm-pithivier.png" alt="Preview do website Aura" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute top-5 left-5 right-5 h-9 rounded-full bg-white/90 backdrop-blur flex items-center justify-between px-4 shadow-sm">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+              </div>
+              <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-normal">
+                aura.com
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/75 via-zinc-950/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex items-end justify-between gap-5 text-white">
+              <div>
+                <span class="block text-[11px] uppercase tracking-widest text-white/70 font-normal mb-2">
+                  Hotelaria boutique
+                </span>
+                <h3 class="font-serif font-normal tracking-tight text-3xl">
+                  Aura
+                </h3>
+              </div>
+              <div class="w-11 h-11 rounded-full bg-white text-zinc-900 flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:rotate-45">
+                <iconify-icon icon="solar:arrow-right-up-linear" class="text-xl"></iconify-icon>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://prismatic-nasturtium-80ed3e.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Clínica Novelino" class="group relative overflow-hidden rounded-[2rem] lg:col-span-3 min-h-[300px] bg-zinc-900 border border-zinc-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 md:group-hover/list:opacity-50 hover:!opacity-100">
+            <img src="assets/portfolio/prismatic-nasturtium.png" alt="Preview do website Clínica Novelino" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute top-5 left-5 right-5 h-9 rounded-full bg-white/90 backdrop-blur flex items-center justify-between px-4 shadow-sm">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+              </div>
+              <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-normal">
+                clinicanovelino.com
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/75 via-zinc-950/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex items-end justify-between gap-5 text-white">
+              <div>
+                <span class="block text-[11px] uppercase tracking-widest text-white/70 font-normal mb-2">
+                  Medicina estética
+                </span>
+                <h3 class="font-serif font-normal tracking-tight text-3xl">
+                  Clínica Novelino
+                </h3>
+              </div>
+              <div class="w-11 h-11 rounded-full bg-white text-zinc-900 flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:rotate-45">
+                <iconify-icon icon="solar:arrow-right-up-linear" class="text-xl"></iconify-icon>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://lojafannie.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Fannie" class="group relative overflow-hidden rounded-[2rem] lg:col-span-3 min-h-[300px] bg-zinc-900 border border-zinc-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 md:group-hover/list:opacity-50 hover:!opacity-100">
+            <img src="assets/portfolio/lojafannie.png" alt="Preview do website Fannie" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute top-5 left-5 right-5 h-9 rounded-full bg-white/90 backdrop-blur flex items-center justify-between px-4 shadow-sm">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+              </div>
+              <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-normal">
+                lojafannie.com
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/75 via-zinc-950/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex items-end justify-between gap-5 text-white">
+              <div>
+                <span class="block text-[11px] uppercase tracking-widest text-white/70 font-normal mb-2">
+                  Moda feminina
+                </span>
+                <h3 class="font-serif font-normal tracking-tight text-3xl">
+                  Fannie
+                </h3>
+              </div>
+              <div class="w-11 h-11 rounded-full bg-white text-zinc-900 flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:rotate-45">
+                <iconify-icon icon="solar:arrow-right-up-linear" class="text-xl"></iconify-icon>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://villasapore.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Villa Sapore" class="group relative overflow-hidden rounded-[2rem] lg:col-span-4 min-h-[300px] bg-zinc-900 border border-zinc-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 md:group-hover/list:opacity-50 hover:!opacity-100">
+            <img src="assets/portfolio/villasapore.png" alt="Preview do website Villa Sapore" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            <div class="absolute top-5 left-5 right-5 h-9 rounded-full bg-white/90 backdrop-blur flex items-center justify-between px-4 shadow-sm">
+              <div class="flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+              </div>
+              <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-normal">
+                villasapore.com
+              </span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/75 via-zinc-950/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6 flex items-end justify-between gap-5 text-white">
+              <div>
+                <span class="block text-[11px] uppercase tracking-widest text-white/70 font-normal mb-2">
+                  Gastronomia
+                </span>
+                <h3 class="font-serif font-normal tracking-tight text-3xl">
+                  Villa Sapore
+                </h3>
+              </div>
+              <div class="w-11 h-11 rounded-full bg-white text-zinc-900 flex items-center justify-center shrink-0 transition-transform duration-500 group-hover:rotate-45">
+                <iconify-icon icon="solar:arrow-right-up-linear" class="text-xl"></iconify-icon>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Máquina de Vendas -->
+    <section id="maquina-vendas" class="py-24 md:py-36 bg-[oklch(0.985_0.006_150)] border-b border-zinc-200 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-20 items-center gsap-section opacity-0 translate-y-10">
+          <div>
+            <div class="w-14 h-14 bg-white border border-zinc-200 rounded-2xl flex items-center justify-center text-zinc-900 mb-8 shadow-sm">
+              <iconify-icon icon="solar:radar-2-linear" class="text-3xl"></iconify-icon>
+            </div>
+            <span class="block text-xs uppercase tracking-widest text-zinc-500 font-normal mb-4">
+              Mídia paga, tracking e performance
+            </span>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-serif font-normal text-zinc-900 mb-6 tracking-tight leading-tight">
+              Aquisição premium não depende de volume. Depende de sinal.
+            </h3>
+            <p class="text-zinc-600 font-light text-xl leading-relaxed mb-10 max-w-2xl">
+              Google Ads captura intenção de compra. Meta Ads cria demanda e
+              reimpacta quem ainda está comparando. O tracking conecta cada
+              clique a lead, reunião e venda, para a verba migrar para o que
+              prova retorno.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-x-8 gap-y-7">
+              <div class="border-t border-zinc-200 pt-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="w-9 h-9 rounded-full bg-blue-50 text-blue-700 border border-blue-100 flex items-center justify-center">
+                    <iconify-icon icon="simple-icons:googleads" class="text-lg"></iconify-icon>
+                  </span>
+                  <strong class="font-normal text-zinc-900">Google Ads com intenção</strong>
+                </div>
+                <p class="text-zinc-500 font-light leading-relaxed">
+                  Search, Performance Max e negativas por praça, serviço e nível
+                  de decisão. A marca aparece quando o cliente já está buscando.
+                </p>
+              </div>
+
+              <div class="border-t border-zinc-200 pt-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="w-9 h-9 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 flex items-center justify-center">
+                    <iconify-icon icon="simple-icons:meta" class="text-lg"></iconify-icon>
+                  </span>
+                  <strong class="font-normal text-zinc-900">Meta Ads com demanda</strong>
+                </div>
+                <p class="text-zinc-500 font-light leading-relaxed">
+                  Criativos, públicos e remarketing desenhados para transformar
+                  atenção qualificada em conversa comercial.
+                </p>
+              </div>
+
+              <div class="border-t border-zinc-200 pt-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="w-9 h-9 rounded-full bg-amber-50 text-amber-700 border border-amber-100 flex items-center justify-center">
+                    <iconify-icon icon="solar:code-scan-linear" class="text-xl"></iconify-icon>
+                  </span>
+                  <strong class="font-normal text-zinc-900">Tracking confiável</strong>
+                </div>
+                <p class="text-zinc-500 font-light leading-relaxed">
+                  GA4, GTM, Pixel, Conversions API, UTMs e eventos de CRM para
+                  ler origem, qualidade e avanço no funil.
+                </p>
+              </div>
+
+              <div class="border-t border-zinc-200 pt-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span class="w-9 h-9 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center justify-center">
+                    <iconify-icon icon="solar:chart-square-linear" class="text-xl"></iconify-icon>
+                  </span>
+                  <strong class="font-normal text-zinc-900">Performance por margem</strong>
+                </div>
+                <p class="text-zinc-500 font-light leading-relaxed">
+                  CPL não decide sozinho. A leitura considera CAC, qualificação,
+                  taxa de reunião, ROAS e payback.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative w-full">
+            <div class="absolute -inset-4 rounded-[2.25rem] border border-zinc-200 hidden lg:block"></div>
+            <div class="relative bg-zinc-950 text-white rounded-[2rem] p-5 md:p-7 shadow-[0_24px_70px_rgba(24,24,27,0.24)] overflow-hidden">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-zinc-500 font-normal mb-2">
+                    Painel de aquisição
+                  </p>
+                  <h4 class="text-xl md:text-2xl font-serif font-normal tracking-tight">
+                    Decisão por canal
+                  </h4>
+                </div>
+                <div class="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs text-emerald-300">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  Otimizando verba
+                </div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-3 mb-5">
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">
+                    Leads com fit
+                  </span>
+                  <strong class="text-2xl md:text-3xl font-light text-white">37</strong>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">
+                    CPL qualif.
+                  </span>
+                  <strong class="text-2xl md:text-3xl font-light text-white">R$96</strong>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-emerald-400 text-zinc-950 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-700 mb-3">
+                    ROAS proj.
+                  </span>
+                  <strong class="text-2xl md:text-3xl font-light">4,2x</strong>
+                </div>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-5 mb-5">
+                <div class="flex items-center justify-between gap-4 mb-5">
+                  <span class="text-sm font-normal text-white">Sinais de performance</span>
+                  <span class="text-xs uppercase tracking-widest text-zinc-500">
+                    Semana atual
+                  </span>
+                </div>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex justify-between text-xs text-zinc-400 mb-2">
+                      <span>Busca com intenção</span>
+                      <span>82%</span>
+                    </div>
+                    <div class="h-2 rounded-full bg-white/10 overflow-hidden">
+                      <div class="h-full w-[82%] rounded-full bg-blue-400"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs text-zinc-400 mb-2">
+                      <span>Remarketing qualificado</span>
+                      <span>64%</span>
+                    </div>
+                    <div class="h-2 rounded-full bg-white/10 overflow-hidden">
+                      <div class="h-full w-[64%] rounded-full bg-indigo-400"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs text-zinc-400 mb-2">
+                      <span>Eventos validados</span>
+                      <span>91%</span>
+                    </div>
+                    <div class="h-2 rounded-full bg-white/10 overflow-hidden">
+                      <div class="h-full w-[91%] rounded-full bg-emerald-400"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-3">
+                <div class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                  <span class="text-xs text-zinc-500 w-8">01</span>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-sm text-white">Google Search</p>
+                    <p class="text-xs text-zinc-500">demanda ativa, palavra-chave, landing page</p>
+                  </div>
+                  <span class="text-xs text-blue-300">capturar</span>
+                </div>
+                <div class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                  <span class="text-xs text-zinc-500 w-8">02</span>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-sm text-white">Meta Ads</p>
+                    <p class="text-xs text-zinc-500">criativo, público, remarketing, prova social</p>
+                  </div>
+                  <span class="text-xs text-indigo-300">aquecer</span>
+                </div>
+                <div class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+                  <span class="text-xs text-zinc-500 w-8">03</span>
+                  <div class="min-w-0 flex-1">
+                    <p class="text-sm text-white">Tracking</p>
+                    <p class="text-xs text-zinc-500">lead, lead qualificado, reunião, venda</p>
+                  </div>
+                  <span class="text-xs text-emerald-300">provar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-20 md:mt-24 pt-16 md:pt-20 border-t border-zinc-200 grid lg:grid-cols-12 gap-10 lg:gap-16 items-start gsap-section opacity-0 translate-y-10">
+          <div class="lg:col-span-4">
+            <span class="block text-xs uppercase tracking-widest text-zinc-500 font-normal mb-6">
+              Operação de crescimento
+            </span>
+            <h3 class="text-3xl md:text-4xl font-serif font-normal text-zinc-900 mb-6 tracking-tight leading-tight">
+              Menos achismo, mais leitura de funil.
+            </h3>
+            <p class="text-zinc-600 font-light text-xl leading-relaxed">
+              A campanha nasce com hipótese, criativo, audiência, palavra-chave
+              e métrica de corte. Depois, a rotina é simples: medir, cortar
+              desperdício, reforçar vencedores e escalar com controle.
+            </p>
+          </div>
+
+          <div class="lg:col-span-8 grid md:grid-cols-2 gap-5">
+            <div class="bg-white border border-zinc-200 rounded-2xl p-5 md:p-6 shadow-sm">
+              <div class="flex items-center justify-between gap-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <span class="w-10 h-10 rounded-full bg-blue-50 text-blue-700 border border-blue-100 flex items-center justify-center">
+                    <iconify-icon icon="simple-icons:googleads" class="text-xl"></iconify-icon>
+                  </span>
+                  <div>
+                    <p class="font-normal text-zinc-900">Google Ads</p>
+                    <p class="text-xs uppercase tracking-widest text-zinc-400">Pesquisa</p>
+                  </div>
+                </div>
+                <span class="text-xs text-emerald-700 bg-emerald-50 border border-emerald-100 rounded-full px-3 py-1">
+                  Alta intenção
+                </span>
+              </div>
+
+              <div class="rounded-xl border border-zinc-200 bg-zinc-50 p-4">
+                <div class="flex items-center gap-2 text-xs mb-2">
+                  <span class="font-semibold text-zinc-900">Patrocinado</span>
+                  <span class="text-zinc-300">•</span>
+                  <span class="text-zinc-500">suamarca.com.br</span>
+                </div>
+                <h4 class="text-lg md:text-xl text-[#1a0dab] font-normal leading-snug mb-2">
+                  Solução Premium para Clientes de Alto Valor
+                </h4>
+                <p class="text-sm text-[#4d5156] leading-relaxed">
+                  Landing page rápida, prova comercial e chamada direta para
+                  diagnóstico com um especialista.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white border border-zinc-200 rounded-2xl p-5 md:p-6 shadow-sm">
+              <div class="flex items-center justify-between gap-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <span class="w-10 h-10 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100 flex items-center justify-center">
+                    <iconify-icon icon="simple-icons:meta" class="text-xl"></iconify-icon>
+                  </span>
+                  <div>
+                    <p class="font-normal text-zinc-900">Meta Ads</p>
+                    <p class="text-xs uppercase tracking-widest text-zinc-400">Criativos</p>
+                  </div>
+                </div>
+                <span class="text-xs text-indigo-700 bg-indigo-50 border border-indigo-100 rounded-full px-3 py-1">
+                  Teste ativo
+                </span>
+              </div>
+
+              <div class="grid grid-cols-3 gap-3 mb-4">
+                <div class="aspect-[3/4] rounded-xl bg-zinc-900 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;q=80&amp;w=400" alt="Criativo Meta Ads A" class="w-full h-full object-cover opacity-80">
+                  <span class="absolute left-2 bottom-2 text-[10px] text-white bg-black/50 rounded-full px-2 py-1">A</span>
+                </div>
+                <div class="aspect-[3/4] rounded-xl bg-zinc-900 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;q=80&amp;w=400" alt="Criativo Meta Ads B" class="w-full h-full object-cover opacity-80">
+                  <span class="absolute left-2 bottom-2 text-[10px] text-white bg-black/50 rounded-full px-2 py-1">B</span>
+                </div>
+                <div class="aspect-[3/4] rounded-xl bg-zinc-900 overflow-hidden relative">
+                  <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&amp;fit=crop&amp;q=80&amp;w=400" alt="Criativo Meta Ads C" class="w-full h-full object-cover opacity-80">
+                  <span class="absolute left-2 bottom-2 text-[10px] text-white bg-black/50 rounded-full px-2 py-1">C</span>
+                </div>
+              </div>
+              <p class="text-sm text-zinc-500 leading-relaxed">
+                Ângulos testados por desejo, objeção e prova. O vencedor vira
+                verba, o fraco sai rápido.
+              </p>
+            </div>
+
+            <div class="md:col-span-2 bg-zinc-900 text-white rounded-2xl p-5 md:p-6 shadow-xl">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-5 mb-6">
+                <div>
+                  <p class="text-xs uppercase tracking-widest text-zinc-500 mb-2">
+                    Tracking de conversão
+                  </p>
+                  <h4 class="text-2xl font-serif font-normal tracking-tight">
+                    O que não é medido não escala.
+                  </h4>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs text-zinc-300 border border-white/10 rounded-full px-3 py-1">GA4</span>
+                  <span class="text-xs text-zinc-300 border border-white/10 rounded-full px-3 py-1">GTM</span>
+                  <span class="text-xs text-zinc-300 border border-white/10 rounded-full px-3 py-1">Pixel</span>
+                  <span class="text-xs text-zinc-300 border border-white/10 rounded-full px-3 py-1">CAPI</span>
+                </div>
+              </div>
+              <div class="grid sm:grid-cols-4 gap-3">
+                <div class="rounded-xl bg-white/[0.04] border border-white/10 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">Evento</span>
+                  <strong class="text-sm font-normal text-white">Lead</strong>
+                </div>
+                <div class="rounded-xl bg-white/[0.04] border border-white/10 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">Qualidade</span>
+                  <strong class="text-sm font-normal text-white">Fit comercial</strong>
+                </div>
+                <div class="rounded-xl bg-white/[0.04] border border-white/10 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">Avanço</span>
+                  <strong class="text-sm font-normal text-white">Reunião</strong>
+                </div>
+                <div class="rounded-xl bg-emerald-400 text-zinc-950 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-700 mb-3">Retorno</span>
+                  <strong class="text-sm font-normal">Venda</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Método -->
+    <section id="diagnostico" class="py-24 md:py-36 bg-[oklch(0.985_0.005_250)] text-zinc-900 relative overflow-hidden">
+      <div class="md:px-12 max-w-7xl z-10 mr-auto ml-auto pr-6 pl-6 relative">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start gsap-section opacity-0 translate-y-10">
+          <div class="lg:col-span-5">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 mb-8 border border-zinc-200 bg-white text-xs text-zinc-500 uppercase tracking-widest font-normal rounded-full shadow-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-zinc-900"></span>
+              Método Darko
+            </span>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-zinc-900 mb-8 leading-tight">
+              Estratégia antes de campanha.
+              <br>
+              <span class="italic font-light text-zinc-400">Execução depois de clareza.</span>
+            </h2>
+            <p class="text-zinc-600 font-light text-xl leading-relaxed max-w-2xl">
+              Nosso método começa entendendo onde a marca está, onde ela perde
+              percepção de valor e quais canais podem gerar demanda qualificada.
+              Só depois entramos em criação, mídia, tracking e otimização.
+            </p>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="relative">
+              <div class="absolute left-5 top-5 bottom-5 w-px bg-zinc-200 hidden sm:block"></div>
+
+              <div class="space-y-5">
+                <div class="relative flex gap-5 sm:gap-6">
+                  <div class="w-10 h-10 rounded-full bg-zinc-900 text-white flex items-center justify-center text-sm font-normal shrink-0 shadow-sm">
+                    01
+                  </div>
+                  <div class="pb-5 border-b border-zinc-200 flex-1">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400 mb-2">
+                      Diagnóstico
+                    </p>
+                    <h3 class="text-2xl font-serif font-normal tracking-tight text-zinc-900 mb-3">
+                      Leitura de marca, oferta e funil
+                    </h3>
+                    <p class="text-zinc-500 font-light leading-relaxed">
+                      Mapeamos posicionamento, público, concorrência, ativos,
+                      site, tráfego atual e gargalos que travam a conversão.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="relative flex gap-5 sm:gap-6">
+                  <div class="w-10 h-10 rounded-full bg-white border border-zinc-200 text-zinc-900 flex items-center justify-center text-sm font-normal shrink-0 shadow-sm">
+                    02
+                  </div>
+                  <div class="pb-5 border-b border-zinc-200 flex-1">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400 mb-2">
+                      Arquitetura
+                    </p>
+                    <h3 class="text-2xl font-serif font-normal tracking-tight text-zinc-900 mb-3">
+                      Plano de aquisição e percepção
+                    </h3>
+                    <p class="text-zinc-500 font-light leading-relaxed">
+                      Definimos mensagem, canais, páginas, criativos, eventos
+                      de tracking e métrica de corte para cada etapa.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="relative flex gap-5 sm:gap-6">
+                  <div class="w-10 h-10 rounded-full bg-white border border-zinc-200 text-zinc-900 flex items-center justify-center text-sm font-normal shrink-0 shadow-sm">
+                    03
+                  </div>
+                  <div class="pb-5 border-b border-zinc-200 flex-1">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400 mb-2">
+                      Produção
+                    </p>
+                    <h3 class="text-2xl font-serif font-normal tracking-tight text-zinc-900 mb-3">
+                      Conteúdo, landing pages e campanhas
+                    </h3>
+                    <p class="text-zinc-500 font-light leading-relaxed">
+                      Transformamos estratégia em peças reais: páginas,
+                      anúncios, copy, criativos, integrações e estrutura de CRM.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="relative flex gap-5 sm:gap-6">
+                  <div class="w-10 h-10 rounded-full bg-emerald-400 text-zinc-950 flex items-center justify-center text-sm font-normal shrink-0 shadow-sm">
+                    04
+                  </div>
+                  <div class="flex-1">
+                    <p class="text-xs uppercase tracking-widest text-zinc-400 mb-2">
+                      Implementação
+                    </p>
+                    <h3 class="text-2xl font-serif font-normal tracking-tight text-zinc-900 mb-3">
+                      Publicar, medir e otimizar
+                    </h3>
+                    <p class="text-zinc-500 font-light leading-relaxed">
+                      Acompanhamos dados, qualificamos leads, ajustamos verba e
+                      melhoramos a máquina até o canal provar retorno.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 md:mt-20 gsap-section opacity-0 translate-y-10">
+          <div class="bg-zinc-900 text-white rounded-[2rem] border border-zinc-800 p-6 md:p-8 lg:p-10 shadow-2xl">
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              <div class="lg:col-span-5">
+                <p class="text-xs uppercase tracking-widest text-zinc-500 mb-4">
+                  O resultado esperado
+                </p>
+                <h3 class="text-3xl md:text-4xl font-serif font-normal tracking-tight leading-tight">
+                  Uma operação que sabe o que medir antes de escalar.
+                </h3>
+              </div>
+              <div class="lg:col-span-7 grid sm:grid-cols-3 gap-3">
+                <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">
+                    Direção
+                  </span>
+                  <strong class="text-sm font-normal text-white">posicionamento claro</strong>
+                </div>
+                <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-500 mb-3">
+                    Execução
+                  </span>
+                  <strong class="text-sm font-normal text-white">campanhas no ar</strong>
+                </div>
+                <div class="rounded-2xl bg-emerald-400 text-zinc-950 p-4">
+                  <span class="block text-[11px] uppercase tracking-widest text-zinc-700 mb-3">
+                    Performance
+                  </span>
+                  <strong class="text-sm font-normal">dados para escalar</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Frase de Impacto -->
+    <section class="min-h-[70vh] flex flex-col items-center justify-center text-center bg-black text-white relative overflow-hidden py-32 px-6">
+      <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-zinc-500/50 to-transparent"></div>
+      <div class="absolute top-0 inset-x-0 h-[500px] bg-gradient-to-b from-zinc-800/30 to-transparent blur-3xl rounded-full translate-y-[-50%] pointer-events-none"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_0%,transparent_100%)] pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-5xl mx-auto gsap-section opacity-0 translate-y-10 flex flex-col items-center">
+        <div class="w-16 h-16 bg-white/5 backdrop-blur-md rounded-full border border-white/10 flex items-center justify-center mb-10 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
+          <iconify-icon icon="solar:stars-linear" class="text-3xl text-zinc-300"></iconify-icon>
+        </div>
+
+        <h2 class="text-4xl md:text-5xl lg:text-7xl font-serif font-light tracking-tight text-white leading-tight mb-8">
+          Seu produto já é extraordinário.
+          <br>
+          <span class="italic font-light text-transparent bg-clip-text bg-gradient-to-b from-zinc-300 to-zinc-600">
+            Chegou a hora do mercado saber disso.
+          </span>
+        </h2>
+
+        <div class="w-px h-24 bg-gradient-to-b from-zinc-500/50 to-transparent mt-8"></div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 text-center border-t border-zinc-900 relative z-10">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="font-serif font-normal tracking-tight text-white text-2xl mb-6 cursor-default">
+          Darko
+          <span class="font-sans font-light text-zinc-700 mx-2">|</span>
+          <span class="font-sans font-normal text-zinc-500 tracking-tight uppercase text-xl">
+            Agência
+          </span>
+        </div>
+        <p class="text-xs uppercase tracking-widest text-zinc-600 font-light">
+          Transformando marcas em grifes digitais. Posicionamento Premium.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const initShaderHero = () => {
+        const container = document.getElementById("shader-hero");
+        if (!container || !window.THREE) return;
+
+        const vertexShader = `
+          void main() {
+            gl_Position = vec4(position, 1.0);
+          }
+        `;
+
+        const fragmentShader = `
+          #define TWO_PI 6.2831853072
+          #define PI 3.14159265359
+
+          precision highp float;
+          uniform vec2 resolution;
+          uniform float time;
+
+          void main(void) {
+            vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / min(resolution.x, resolution.y);
+            float t = time * 0.05;
+            float lineWidth = 0.002;
+
+            float red = 0.0;
+            float green = 0.0;
+            float blue = 0.0;
+            for (int i = 0; i < 5; i++) {
+              float weight = lineWidth * float(i * i);
+              float offset = float(i) * 0.01;
+              float grid = mod(uv.x + uv.y, 0.2);
+              red += weight / abs(fract(t + offset) * 5.0 - length(uv) + grid);
+              green += weight / abs(fract(t - 0.01 + offset) * 5.0 - length(uv) + grid);
+              blue += weight / abs(fract(t - 0.02 + offset) * 5.0 - length(uv) + grid);
+            }
+
+            gl_FragColor = vec4(red, green, blue, 1.0);
+          }
+        `;
+
+        const camera = new THREE.Camera();
+        camera.position.z = 1;
+
+        const scene = new THREE.Scene();
+        const geometry = new THREE.PlaneGeometry(2, 2);
+        const uniforms = {
+          time: { value: 1.0 },
+          resolution: { value: new THREE.Vector2() },
+        };
+
+        const material = new THREE.ShaderMaterial({
+          uniforms,
+          vertexShader,
+          fragmentShader,
+        });
+
+        const mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setClearColor(0x000000, 1);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+        renderer.domElement.setAttribute("aria-hidden", "true");
+
+        container.innerHTML = "";
+        container.appendChild(renderer.domElement);
+
+        const resizeShader = () => {
+          const width = Math.max(container.clientWidth, 1);
+          const height = Math.max(container.clientHeight, 1);
+          renderer.setSize(width, height, false);
+          uniforms.resolution.value.set(renderer.domElement.width, renderer.domElement.height);
+        };
+
+        let animationId = 0;
+        const animateShader = () => {
+          animationId = requestAnimationFrame(animateShader);
+          uniforms.time.value += 0.05;
+          renderer.render(scene, camera);
+        };
+
+        resizeShader();
+        animateShader();
+        window.addEventListener("resize", resizeShader, false);
+        window.addEventListener("pagehide", () => {
+          window.removeEventListener("resize", resizeShader, false);
+          cancelAnimationFrame(animationId);
+          renderer.dispose();
+          geometry.dispose();
+          material.dispose();
+        }, { once: true });
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initShaderHero();
+
+        const revealStaticContent = () => {
+          document.getElementById("intro-overlay")?.remove();
+          document.querySelectorAll(".opacity-0").forEach(element => {
+            element.classList.remove("opacity-0");
+          });
+          document.querySelectorAll(".translate-y-8, .translate-y-10").forEach(element => {
+            element.classList.remove("translate-y-8", "translate-y-10");
+          });
+          document.getElementById("navbar")?.classList.add("bg-white/90");
+        };
+
+        const isAnchorVisit = window.location.hash.length > 1;
+
+        if (isAnchorVisit || !window.gsap || !window.ScrollTrigger) {
+          revealStaticContent();
+        }
+
+        if (isAnchorVisit) {
+          const anchorTarget = document.querySelector(window.location.hash);
+          if (anchorTarget) {
+            window.setTimeout(() => {
+              window.scrollTo({ top: anchorTarget.offsetTop, behavior: "auto" });
+            }, 100);
+          }
+        }
+
+        if (!window.gsap || !window.ScrollTrigger) {
+          return;
+        }
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        if (!isAnchorVisit) {
+          const tl = gsap.timeline();
+
+          tl.to("#intro-logo", { opacity: 1, y: 0, duration: 1.2, ease: "power4.out", delay: 0.2 })
+            .to("#intro-logo", { opacity: 0, y: -20, duration: 0.8, ease: "power3.in", delay: 0.8 })
+            .to("#intro-overlay", { yPercent: -100, duration: 1.2, ease: "expo.inOut" })
+            .set("#intro-overlay", { display: "none" })
+            .fromTo("#navbar",
+              { yPercent: -100 },
+              { yPercent: 0, duration: 1.2, ease: "power3.out" },
+              "-=0.8"
+            )
+            .fromTo(".slide-content",
+              { y: 40, opacity: 0 },
+              { y: 0, opacity: 1, duration: 1.2, ease: "power4.out" },
+              "-=1"
+            );
+        }
+
+        gsap.utils.toArray(".gsap-section").forEach(section => {
+          gsap.to(section, {
+            y: 0,
+            opacity: 1,
+            duration: 1.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none reverse"
+            }
+          });
+        });
+
+        gsap.to("#hero-media-wrapper", {
+          yPercent: 15,
+          ease: "none",
+          scrollTrigger: {
+            trigger: "header",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+          }
+        });
+
+        gsap.fromTo("#shader-hero",
+          { scale: 1, xPercent: 0, yPercent: 0 },
+          {
+            scale: 1.04,
+            xPercent: -1,
+            yPercent: -1,
+            duration: 18,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+          }
+        );
+
+        const nav = document.getElementById("navbar");
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            nav.classList.add('shadow-sm', 'bg-white/95');
+            nav.classList.remove('bg-white/90');
+          } else {
+            nav.classList.remove('shadow-sm', 'bg-white/95');
+            nav.classList.add('bg-white/90');
+          }
+        });
+      });
+    </script>
+  
+</body></html>
