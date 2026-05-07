@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darko Marketing Agency</title>
+    <title>Darko Marketing Agency | Explora&ccedil;&atilde;o local</title>
     <style>
       :root {
         color-scheme: dark;
@@ -520,13 +520,12 @@
 
       .machine {
         display: grid;
-        grid-template-columns: minmax(0, 0.84fr) minmax(340px, 1.16fr);
-        gap: 28px;
-        align-items: center;
+        grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
+        gap: 18px;
       }
 
       .machine-copy {
-        padding: 34px;
+        padding: 32px;
         border-radius: var(--radius);
         border: 1px solid var(--line);
         background: var(--panel);
@@ -541,246 +540,87 @@
         line-height: 1.7;
       }
 
-      .service-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 26px 0 30px;
-      }
-
-      .service-links span {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        padding: 8px 10px;
-        color: var(--blue-hot);
-        background: oklch(0.135 0.018 255);
-        font-size: 0.74rem;
-        font-weight: 700;
-      }
-
-      .machine-copy .button {
-        width: fit-content;
-      }
-
-      .search-stage {
-        position: relative;
-        min-height: 560px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        overflow: clip;
-        background:
-          radial-gradient(circle at 50% 42%, oklch(0.28 0.08 240 / 0.28), transparent 42%),
-          linear-gradient(135deg, oklch(0.16 0.02 255), oklch(0.105 0.012 255));
-        isolation: isolate;
-      }
-
-      .search-stage::before {
-        content: "";
-        position: absolute;
-        width: 640px;
-        height: 640px;
-        left: 50%;
-        top: 48%;
-        z-index: -1;
-        transform: translate(-50%, -50%);
-        border-radius: 44% 56% 49% 51%;
-        background:
-          repeating-radial-gradient(closest-side, transparent 0 36px, oklch(0.72 0.17 230 / 0.68) 38px, transparent 40px);
-        opacity: 0.72;
-      }
-
-      .search-stage::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background:
-          linear-gradient(to right, oklch(0.5 0.08 240 / 0.16) 1px, transparent 1px),
-          linear-gradient(to bottom, oklch(0.5 0.08 240 / 0.12) 1px, transparent 1px);
-        background-size: 42px 42px;
-        mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
-      }
-
-      .phone-shell {
-        position: absolute;
-        width: min(44%, 260px);
-        min-width: 218px;
-        aspect-ratio: 0.48;
-        left: 50%;
-        top: 34px;
-        transform: translateX(-50%);
-        border: 10px solid oklch(0.04 0.008 255);
-        border-radius: 38px;
-        background: oklch(0.965 0.006 245);
-        box-shadow: 0 26px 70px oklch(0.04 0.02 255 / 0.48);
-        overflow: hidden;
-      }
-
-      .phone-notch {
-        position: absolute;
-        width: 92px;
-        height: 18px;
-        left: 50%;
-        top: 8px;
-        transform: translateX(-50%);
-        border-radius: 0 0 14px 14px;
-        background: oklch(0.04 0.008 255);
-      }
-
-      .phone-screen {
-        position: absolute;
-        inset: 0;
-        padding: 56px 16px 16px;
-        color: var(--ink);
-      }
-
-      .phone-nav {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 42px;
-        color: oklch(0.42 0.02 252);
-        font-size: 0.62rem;
-        font-weight: 700;
-      }
-
-      .search-brand {
-        margin-bottom: 24px;
-        text-align: center;
-        color: var(--blue-deep);
-        font-size: 2.2rem;
-        line-height: 1;
-        font-weight: 900;
-      }
-
-      .search-bar {
-        min-height: 38px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid oklch(0.86 0.012 245);
-        border-radius: var(--radius);
-        padding: 0 12px;
-        background: oklch(0.985 0.006 245);
-        color: oklch(0.36 0.022 252);
-        font-size: 0.76rem;
-      }
-
-      .search-dot {
-        width: 9px;
-        height: 9px;
-        border: 2px solid oklch(0.55 0.02 245);
-        border-radius: 999px;
-      }
-
-      .search-buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin-top: 14px;
-      }
-
-      .search-buttons span {
-        min-height: 26px;
-        display: grid;
-        place-items: center;
-        border: 1px solid oklch(0.88 0.01 245);
-        border-radius: var(--radius);
-        background: oklch(0.955 0.007 245);
-        color: oklch(0.42 0.02 252);
-        font-size: 0.58rem;
-        font-weight: 700;
-      }
-
-      .ad-card {
-        position: absolute;
-        left: 34px;
-        right: 34px;
-        bottom: 118px;
-        z-index: 2;
-        padding: 26px;
-        border: 1px solid oklch(0.84 0.016 245);
-        border-radius: var(--radius);
-        background: oklch(0.975 0.006 245);
-        color: var(--ink);
-        box-shadow: 0 26px 80px oklch(0.04 0.015 255 / 0.42);
-      }
-
-      .ad-card small {
-        display: block;
-        margin-bottom: 10px;
-        color: oklch(0.4 0.02 252);
-        font-size: 0.72rem;
-        font-weight: 700;
-      }
-
-      .ad-card h3 {
-        margin-bottom: 8px;
-        color: var(--blue-deep);
-        font-size: 1.45rem;
-        line-height: 1.05;
-      }
-
-      .ad-card p {
-        margin-bottom: 16px;
-        color: oklch(0.36 0.022 252);
-        line-height: 1.5;
-      }
-
-      .ad-path {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      .ad-path span {
-        color: var(--blue-deep);
-        font-size: 0.76rem;
-        font-weight: 700;
-      }
-
-      .signal-strip {
-        position: absolute;
-        left: 34px;
-        right: 34px;
-        bottom: 24px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1px;
+      .metric-board {
         border: 1px solid var(--line);
         border-radius: var(--radius);
         overflow: hidden;
         background: var(--line);
+        display: grid;
+        gap: 1px;
       }
 
-      .signal-step {
-        min-height: 72px;
-        padding: 14px;
-        background: oklch(0.14 0.018 255 / 0.96);
+      .metric-top {
+        min-height: 150px;
+        padding: 24px;
+        background: var(--panel);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: start;
       }
 
-      .signal-step b {
-        display: block;
-        margin-bottom: 8px;
-        color: var(--blue-hot);
-        font-size: 0.72rem;
+      .metric-top strong {
+        font-size: 4.6rem;
+        line-height: 0.82;
       }
 
-      .signal-step span {
-        color: var(--muted);
-        font-size: 0.78rem;
-        line-height: 1.35;
-      }
-
-      .stage-label {
-        position: absolute;
-        top: 22px;
-        right: 22px;
+      .metric-pill {
         border: 1px solid oklch(0.46 0.045 245);
         border-radius: var(--radius);
         padding: 9px 10px;
         color: var(--signal);
         font-size: 0.82rem;
-        background: oklch(0.12 0.014 255 / 0.86);
+      }
+
+      .metric-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+      }
+
+      .metric {
+        min-height: 154px;
+        padding: 20px;
+        background: var(--panel);
+      }
+
+      .metric b {
+        display: block;
+        margin-bottom: 18px;
+        font-size: 2.1rem;
+      }
+
+      .metric span {
+        color: var(--quiet);
+      }
+
+      .pipeline {
+        display: grid;
+        gap: 1px;
+        background: var(--line);
+      }
+
+      .pipeline-row {
+        display: grid;
+        grid-template-columns: 54px 1fr auto;
+        gap: 18px;
+        padding: 18px 20px;
+        background: var(--panel);
+        align-items: center;
+      }
+
+      .pipeline-row p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .pipeline-row b {
+        color: var(--paper);
+      }
+
+      .pipeline-row span {
+        color: var(--blue-hot);
+        font-weight: 700;
       }
 
       .method-list {
@@ -911,16 +751,8 @@
           grid-column: span 6;
         }
 
-        .search-stage {
-          min-height: 620px;
-        }
-
-        .signal-strip {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .ad-card {
-          bottom: 190px;
+        .metric-list {
+          grid-template-columns: 1fr;
         }
       }
 
@@ -968,7 +800,8 @@
           font-size: 1rem;
         }
 
-        .readout-row {
+        .readout-row,
+        .pipeline-row {
           grid-template-columns: 1fr;
           gap: 8px;
         }
@@ -991,51 +824,17 @@
           min-height: 360px;
         }
 
-        .machine-copy {
+        .machine-copy,
+        .metric-top {
           padding: 22px;
         }
 
-        .search-stage {
-          min-height: 650px;
+        .metric-top {
+          grid-template-columns: 1fr;
         }
 
-        .search-stage::before {
-          width: 520px;
-          height: 520px;
-        }
-
-        .stage-label {
-          left: 18px;
-          right: auto;
-          top: 18px;
-        }
-
-        .phone-shell {
-          top: 58px;
-          width: 226px;
-          min-width: 0;
-        }
-
-        .ad-card {
-          left: 18px;
-          right: 18px;
-          bottom: 168px;
-          padding: 20px;
-        }
-
-        .ad-card h3 {
-          font-size: 1.2rem;
-        }
-
-        .signal-strip {
-          left: 18px;
-          right: 18px;
-          bottom: 18px;
-        }
-
-        .signal-step {
-          min-height: 66px;
-          padding: 12px;
+        .metric-top strong {
+          font-size: 3.3rem;
         }
 
         .cta-mark {
@@ -1255,74 +1054,53 @@
         <div class="section-inner">
           <div class="machine reveal">
             <div class="machine-copy">
-              <p class="kicker">Google Ads e demanda ativa</p>
-              <h2 id="maquina-title">Capturar quem j&aacute; est&aacute; procurando muda a conta.</h2>
+              <p class="kicker">M&iacute;dia paga e tracking</p>
+              <h2 id="maquina-title">A verba migra para o que prova retorno.</h2>
               <p>
-                A busca &eacute; a parte do funil onde a inten&ccedil;&atilde;o j&aacute; existe. A Darko organiza campanha, landing page e tracking para transformar pesquisa em lead qualificado, reuni&atilde;o e venda atribu&iacute;da.
+                A explora&ccedil;&atilde;o visual tamb&eacute;m troca o discurso abstrato por uma leitura operacional. O visitante entende que a Darko n&atilde;o entrega apenas beleza: ela instrumenta a decis&atilde;o.
               </p>
               <p>
-                Search, Performance Max e remarketing entram com uma leitura simples: aparecer para a pessoa certa, cortar desperd&iacute;cio cedo e provar quais cliques viram conversa comercial.
+                A est&eacute;tica de painel combina com a promessa de precis&atilde;o, mas continua premium porque usa sil&ecirc;ncio, contraste e poucas cores.
               </p>
-              <div class="service-links" aria-label="Servi&ccedil;os de Google Ads">
-                <span>Search</span>
-                <span>Performance Max</span>
-                <span>Remarketing</span>
-                <span>GA4 + GTM</span>
-                <span>Convers&otilde;es offline</span>
-              </div>
-              <a class="button button-primary" href="#diagnostico">Diagnosticar demanda ativa &rarr;</a>
             </div>
 
-            <div class="search-stage" aria-label="Visual simulado de Google Ads e tracking">
-              <span class="stage-label">Inten&ccedil;&atilde;o em leitura</span>
-              <div class="phone-shell" aria-hidden="true">
-                <span class="phone-notch"></span>
-                <div class="phone-screen">
-                  <div class="phone-nav">
-                    <span>Busca</span>
-                    <span>Mapa</span>
-                    <span>Perfil</span>
-                  </div>
-                  <div class="search-brand">Search</div>
-                  <div class="search-bar">
-                    <span class="search-dot"></span>
-                    <span>[servi&ccedil;o premium] + cidade</span>
-                  </div>
-                  <div class="search-buttons">
-                    <span>Pesquisar</span>
-                    <span>Comparar</span>
-                  </div>
+            <div class="metric-board" aria-label="Painel de performance simulado">
+              <div class="metric-top">
+                <div>
+                  <p class="meta-label">Pipeline em leitura</p>
+                  <strong>4.2x</strong>
+                </div>
+                <span class="metric-pill">ROAS projetado</span>
+              </div>
+              <div class="metric-list">
+                <div class="metric">
+                  <b>37</b>
+                  <span>Leads com fit comercial</span>
+                </div>
+                <div class="metric">
+                  <b>R$96</b>
+                  <span>CPL qualificado</span>
+                </div>
+                <div class="metric">
+                  <b>91%</b>
+                  <span>Eventos validados</span>
                 </div>
               </div>
-
-              <article class="ad-card">
-                <small>An&uacute;ncio &bull; darko.agency/google-ads</small>
-                <h3>Google Ads com tracking de venda</h3>
-                <p>Campanhas para marcas de alto ticket que precisam capturar inten&ccedil;&atilde;o, filtrar lead ruim e enxergar retorno real.</p>
-                <div class="ad-path" aria-label="Caminhos de servi&ccedil;o">
-                  <span>Busca</span>
-                  <span>Landing page</span>
-                  <span>CRM</span>
-                  <span>ROAS</span>
-                </div>
-              </article>
-
-              <div class="signal-strip" aria-label="Caminho de mensura&ccedil;&atilde;o">
-                <div class="signal-step">
+              <div class="pipeline">
+                <div class="pipeline-row">
                   <b>01</b>
-                  <span>Clique com inten&ccedil;&atilde;o</span>
+                  <p>Google Search captura demanda ativa.</p>
+                  <span>capturar</span>
                 </div>
-                <div class="signal-step">
+                <div class="pipeline-row">
                   <b>02</b>
-                  <span>Lead com fit</span>
+                  <p>Meta aquece p&uacute;blico, prova e desejo.</p>
+                  <span>aquecer</span>
                 </div>
-                <div class="signal-step">
+                <div class="pipeline-row">
                   <b>03</b>
-                  <span>Reuni&atilde;o marcada</span>
-                </div>
-                <div class="signal-step">
-                  <b>04</b>
-                  <span>Venda atribu&iacute;da</span>
+                  <p>Tracking conecta origem, qualidade e venda.</p>
+                  <span>provar</span>
                 </div>
               </div>
             </div>
@@ -1381,7 +1159,7 @@
             <p class="kicker">Pr&oacute;ximo passo</p>
             <h2 id="cta-title">A marca j&aacute; tem o s&iacute;mbolo. Agora a experi&ecirc;ncia precisa carregar a mesma for&ccedil;a.</h2>
             <p>
-              Uma experi&ecirc;ncia mais Darko, mais azul, mais performance, menos template.
+              Esta vers&atilde;o fica local como territ&oacute;rio de explora&ccedil;&atilde;o: mais Darko, mais azul, mais performance, menos template.
             </p>
           </div>
           <div class="cta-mark" aria-hidden="true">
@@ -1394,7 +1172,7 @@
     <footer class="footer">
       <div class="footer-inner">
         <span>DARKO MARKETING AGENCY</span>
-        <span>Vers&atilde;o visual 02</span>
+        <span>Explora&ccedil;&atilde;o local, sem deploy</span>
       </div>
     </footer>
 

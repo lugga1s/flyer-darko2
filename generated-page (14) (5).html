@@ -984,7 +984,8 @@
               blue += weight / abs(fract(t - 0.02 + offset) * 5.0 - length(uv) + grid);
             }
 
-            gl_FragColor = vec4(red, green, blue, 1.0);
+            // Ajuste para tonalidade de azul brilhoso
+            gl_FragColor = vec4(red * 0.1, green * 0.5, blue * 1.8, 1.0);
           }
         `;
 
